@@ -19,6 +19,7 @@
       <module fileurl="file://$PROJECT_DIR$/mystatic/mystatic.iml" filepath="$PROJECT_DIR$/mystatic/mystatic.iml" />
       <module fileurl="file://$PROJECT_DIR$/oop/oop.iml" filepath="$PROJECT_DIR$/oop/oop.iml" />
       <module fileurl="file://$PROJECT_DIR$/oop-abstract/oop-abstract.iml" filepath="$PROJECT_DIR$/oop-abstract/oop-abstract.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oop-innerclass/oop-innerclass.iml" filepath="$PROJECT_DIR$/oop-innerclass/oop-innerclass.iml" />
       <module fileurl="file://$PROJECT_DIR$/opp-polymorphism/opp-polymorphism.iml" filepath="$PROJECT_DIR$/opp-polymorphism/opp-polymorphism.iml" />
       <module fileurl="file://$PROJECT_DIR$/studentSystem/studentSystem.iml" filepath="$PROJECT_DIR$/studentSystem/studentSystem.iml" />
     </modules>
