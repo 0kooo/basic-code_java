@@ -24,6 +24,7 @@
       <module fileurl="file://$PROJECT_DIR$/oop-innerclass/oop-innerclass.iml" filepath="$PROJECT_DIR$/oop-innerclass/oop-innerclass.iml" />
       <module fileurl="file://$PROJECT_DIR$/opp-polymorphism/opp-polymorphism.iml" filepath="$PROJECT_DIR$/opp-polymorphism/opp-polymorphism.iml" />
       <module fileurl="file://$PROJECT_DIR$/search-code/search-code.iml" filepath="$PROJECT_DIR$/search-code/search-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sort-code/sort-code.iml" filepath="$PROJECT_DIR$/sort-code/sort-code.iml" />
       <module fileurl="file://$PROJECT_DIR$/studentSystem/studentSystem.iml" filepath="$PROJECT_DIR$/studentSystem/studentSystem.iml" />
     </modules>
   </component>
