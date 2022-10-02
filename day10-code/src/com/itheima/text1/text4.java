@@ -1,4 +1,4 @@
-package com.itheima.text;
+package com.itheima.text1;
 
 public class text4 {
     public static void main(String[] args) {
