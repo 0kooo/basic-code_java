@@ -18,6 +18,7 @@
       <module fileurl="file://$PROJECT_DIR$/day9-code/day9-code.iml" filepath="$PROJECT_DIR$/day9-code/day9-code.iml" />
       <module fileurl="file://$PROJECT_DIR$/farmerandlord/farmerandlord.iml" filepath="$PROJECT_DIR$/farmerandlord/farmerandlord.iml" />
       <module fileurl="file://$PROJECT_DIR$/myapi/myapi.iml" filepath="$PROJECT_DIR$/myapi/myapi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mycontainer/mycontainer.iml" filepath="$PROJECT_DIR$/mycontainer/mycontainer.iml" />
       <module fileurl="file://$PROJECT_DIR$/mydate/mydate.iml" filepath="$PROJECT_DIR$/mydate/mydate.iml" />
       <module fileurl="file://$PROJECT_DIR$/mymap/mymap.iml" filepath="$PROJECT_DIR$/mymap/mymap.iml" />
       <module fileurl="file://$PROJECT_DIR$/mystatic/mystatic.iml" filepath="$PROJECT_DIR$/mystatic/mystatic.iml" />
