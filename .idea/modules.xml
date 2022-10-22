@@ -22,6 +22,7 @@
       <module fileurl="file://$PROJECT_DIR$/mydate/mydate.iml" filepath="$PROJECT_DIR$/mydate/mydate.iml" />
       <module fileurl="file://$PROJECT_DIR$/mymap/mymap.iml" filepath="$PROJECT_DIR$/mymap/mymap.iml" />
       <module fileurl="file://$PROJECT_DIR$/mystatic/mystatic.iml" filepath="$PROJECT_DIR$/mystatic/mystatic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mystream/mystream.iml" filepath="$PROJECT_DIR$/mystream/mystream.iml" />
       <module fileurl="file://$PROJECT_DIR$/myvessel/myvessel.iml" filepath="$PROJECT_DIR$/myvessel/myvessel.iml" />
       <module fileurl="file://$PROJECT_DIR$/oop/oop.iml" filepath="$PROJECT_DIR$/oop/oop.iml" />
       <module fileurl="file://$PROJECT_DIR$/oop-abstract/oop-abstract.iml" filepath="$PROJECT_DIR$/oop-abstract/oop-abstract.iml" />
