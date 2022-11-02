@@ -13,10 +13,22 @@ public class Student {
         this.age = Integer.parseInt(student[1]);
     }
 
+    public static String newSize(Student s){
+        return s.name + "-" + s.age;
+    }
+
 
     public Student(String name, int age) {
         this.name = name;
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
     }
 
     public String getName() {
