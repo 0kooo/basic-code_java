@@ -1,4 +1,4 @@
-package com.itheima.charset;
+package com.itheima.mycharset;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Arrays;
