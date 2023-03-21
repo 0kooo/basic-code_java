@@ -1,4 +1,4 @@
-package com.itheima.a06threadsafe1;
+package com.itheima.a08threadsafe3;
 
 public class ThreadDemo {
     public static void main(String[] args) {

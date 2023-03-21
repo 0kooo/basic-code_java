@@ -1,4 +1,4 @@
-package com.itheima.a01threadcase4;
+package com.itheima.a04threadmethod1;
 
 public class ThreadDemo {
     public static void main(String[] args) throws InterruptedException {

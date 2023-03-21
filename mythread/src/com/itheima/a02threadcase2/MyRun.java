@@ -1,4 +1,4 @@
-package com.itheima.a01threadcase2;
+package com.itheima.a02threadcase2;
 
 public class MyRun implements Runnable{
     @Override

@@ -1,10 +1,10 @@
-package com.itheima.a02threadcase2;
+package com.itheima.a05threadmethod2;
 
-public class MyRun implements Runnable{
+public class MyRunnable implements Runnable{
     @Override
     public void run() {
         for (int i = 0; i < 10; i++) {
-            System.out.println(Thread.currentThread().getName() + "hello");
+            System.out.println(Thread.currentThread().getName() + i + "");
         }
     }
 }

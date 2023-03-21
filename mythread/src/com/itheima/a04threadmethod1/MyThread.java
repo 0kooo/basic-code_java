@@ -1,4 +1,4 @@
-package com.itheima.a01threadcase4;
+package com.itheima.a04threadmethod1;
 
 public class MyThread extends Thread{
     public MyThread() {
