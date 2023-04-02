@@ -1,7 +1,8 @@
-package com.itheima.a04tcpdemo1;
+package com.itheima.a05tcpdemo2;
 
+import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -16,10 +17,13 @@ public class Server {
         Socket socket = ss.accept();
 
         //3.从连接通道中获取输入流读取数据
-        InputStream is = socket.getInputStream();
+        /*InputStream is = socket.getInputStream();
+        InputStreamReader isr = new InputStreamReader(is);
+        BufferedReader br = new BufferedReader(isr);*/
+        BufferedReader br = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         int b;
-        while ((b = is.read()) != -1){
-            System.out.println((char) b);
+        while ((b = br.read()) != -1){
+            System.out.print((char) b);
         }
 
         //释放资源

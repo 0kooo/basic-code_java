@@ -1,4 +1,4 @@
-package com.itheima.a04tcpdemo1;
+package com.itheima.a05tcpdemo2;
 
 import java.io.IOException;
 import java.io.OutputStream;
@@ -16,7 +16,7 @@ public class Client {
         //2.可以从连接通道中获取输出流
         OutputStream os = socket.getOutputStream();
         //写出数据
-        os.write("aaa".getBytes());
+        os.write("你好你好！".getBytes());
         //3.释放资源
         os.close();
         socket.close();

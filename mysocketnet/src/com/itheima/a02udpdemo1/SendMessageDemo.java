@@ -1,4 +1,4 @@
-package com.itheima.a02udpdemo;
+package com.itheima.a02udpdemo1;
 
 import java.io.IOException;
 import java.net.DatagramPacket;
