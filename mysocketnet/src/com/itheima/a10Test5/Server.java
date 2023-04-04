@@ -1,9 +1,8 @@
-package com.itheima.a09Test4;
+package com.itheima.a10Test5;
 
-import java.io.*;
+import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.util.UUID;
 
 public class Server {
     public static void main(String[] args) throws IOException {
@@ -13,24 +12,10 @@ public class Server {
 
         ServerSocket ss = new ServerSocket(20000);
 
-        Socket socket = ss.accept();
-        //生成随机名字（不重复）
-        String name = UUID.randomUUID().toString().replace("-", "");
+        while (true) {
+            Socket socket = ss.accept();
 
-        BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream("mysocketnet\\serverdir\\" + name + ".jpg"));
-        BufferedInputStream bis = new BufferedInputStream(socket.getInputStream());
-        byte[] bytes = new byte[1024];
-        int len;
-        while ((len = bis.read(bytes)) != -1){
-            bos.write(bytes, 0, len);
+            new Thread(new MyRunnable(socket)).start();
         }
-
-        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
-        bw.write("接收成功！");
-        bw.newLine();
-        bw.flush();
-
-        socket.close();
-        ss.close();
     }
 }

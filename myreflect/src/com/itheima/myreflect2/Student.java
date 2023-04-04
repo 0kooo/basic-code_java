@@ -1,10 +1,18 @@
-package com.itheima.myreflect1;
+package com.itheima.myreflect2;
 
 public class Student {
     private String name;
     private int age;
 
     public Student() {
+    }
+
+    public Student(String name) {
+        this.name = name;
+    }
+
+    public Student(int age) {
+        this.age = age;
     }
 
     public Student(String name, int age) {
