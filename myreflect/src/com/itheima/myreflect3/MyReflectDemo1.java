@@ -1,58 +1,55 @@
-package com.itheima.myreflect2;
+package com.itheima.myreflect3;
 
-import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 
 public class MyReflectDemo1 {
-    public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
+    public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException, NoSuchFieldException {
         /*
-        Class类中用于获取构造方法的方法
-            Constructor<?>[] getConstructors()                                返回所有公共构造方法对象的数组
-            Constructor<?>[] getDeclaredConstructors()                        返回所有构造方法对象的数组
-            Constructor<T> getConstructor(Class<?>... parameterTypes)         返回单个公共构造方法对象
-            Constructor<T> getDeclaredConstructor(Class<?>... parameterTypes) 返回单个构造方法对象
+       Class类中用于获取成员变量的方法
+            Field[] getFields()：                返回所有公共成员变量对象的数组
+            Field[] getDeclaredFields()：        返回所有成员变量对象的数组
+            Field getField(String name)：        返回单个公共成员变量对象
+            Field getDeclaredField(String name)：返回单个成员变量对象
 
+       Field类中用于创建对象的方法
+            void set(Object obj, Object value)：赋值
+            Object get(Object obj)              获取值
 
-        Constructor类中用于创建对象的方法
-            T newInstance(Object... initargs)                                 根据指定的构造方法创建对象
-            setAccessible(boolean flag)                                       设置为true,表示取消访问检查
     */
+        //1.
+        Class clazz = Class.forName("com.itheima.myreflect3.Student");
 
-        Class clazz = Class.forName("com.itheima.myreflect2.Student");
-
-        /*Constructor[] cons1 = clazz.getConstructors();
-        for (Constructor con : cons1) {
-            System.out.println(con);
+        //2.变量所以的成员变量
+        /*Field[] fields = clazz.getDeclaredFields();
+        for (Field field : fields) {
+            System.out.println(field);
         }*/
 
-        /*Constructor[] cons2 = clazz.getDeclaredConstructors();
-        for (Constructor con : cons2) {
-            System.out.println(con);
-        }*/
+        //获取单个的成员变量
+        Field name = clazz.getDeclaredField("name");
+        System.out.println(name);
 
-        /*Constructor con1 = clazz.getDeclaredConstructor();
-        System.out.println(con1);
-
-        Constructor con2 = clazz.getDeclaredConstructor(String.class);
-        System.out.println(con2);
-
-        Constructor con3 = clazz.getDeclaredConstructor(int.class);
-        System.out.println(con3);*/
-
-        Constructor con4 = clazz.getDeclaredConstructor(String.class, int.class);
-        //System.out.println(con4);
-
-        /*int modifiers = con4.getModifiers();
+        //获取权限修饰符
+        int modifiers = name.getModifiers();
         System.out.println(modifiers);
 
-        Parameter[] parameters = con4.getParameters();
-        for (Parameter parameter : parameters) {
-            System.out.println(parameter);
-        }*/
+        //获取成员变量的名字
+        String n = name.getName();
+        System.out.println(n);
 
-        //暴力反射：表示临时取消权限校验
-        con4.setAccessible(true);
-        Student s = (Student) con4.newInstance("张三", 23);
-        System.out.println(s.toString());
+        //获取成员变量的数据类型
+        Class<?> type = name.getType();
+        System.out.println(type);
+
+        //获取成员变量记录的值
+        Student s = new Student("zhangsan", 23, "男");
+        name.setAccessible(true);
+        String value = (String)name.get(s);
+        System.out.println(value);
+
+        //修改对象里面记录的值
+        name.set(s, "lisi");
+        System.out.println(s);
     }
 }
